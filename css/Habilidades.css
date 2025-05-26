@@ -1,0 +1,122 @@
+#habilidades {
+    color: #fff;
+    padding: 100px 20px;
+    background-color: #0f0f0f;
+    position: relative;
+    overflow: hidden;
+}
+
+#habilidades span {
+    color: #ffee5c;
+}
+
+#habilidades .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#habilidades h2.titulo-animado {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.habilidades-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.habilidade {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.habilidade:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(255, 238, 92, 0.3);
+}
+
+.habilidade img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.habilidade:hover img {
+    transform: rotate(3deg) scale(1.08);
+}
+
+.habilidade h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffee5c;
+}
+
+.habilidade p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Botão */
+.btn-contato {
+    margin-top: 70px;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0f0f0f;
+    background: linear-gradient(90deg, #ffee5c, #ffd700);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.4s ease, transform 0.2s ease;
+}
+
+.btn-contato:hover {
+    background: linear-gradient(90deg, #ffd700, #ffee5c);
+    transform: scale(1.05);
+}
+
+/* Animação fade-in */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #habilidades h2.titulo-animado {
+        font-size: 2rem;
+    }
+
+    .habilidade h3 {
+        font-size: 1.3rem;
+    }
+
+    .habilidade p {
+        font-size: 0.95rem;
+    }
+
+    .btn-contato {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}

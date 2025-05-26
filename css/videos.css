@@ -1,0 +1,140 @@
+.videos {
+    background-color: #111111a4;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .videos span {
+    color: #ffee5c;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+  
+  .video-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+  
+  .video-carousel::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .video-carousel::-webkit-scrollbar-thumb {
+    background: #ffee5c;
+    border-radius: 10px;
+  }
+  
+  .video {
+    flex: 0 0 32%;
+    background: #222;
+    border-radius: 16px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  }
+  
+  .video:hover {
+    transform: scale(1.03);
+  }
+  
+  .video video {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #ffee5c;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 12px;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    background: #666;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .indicator.active,
+  .indicator:hover {
+    background: #ffee5c;
+  }
+  
+  /* VSL Section */
+  .video-section {
+    background: #1b1b1b;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .main-video iframe {
+    width: 100%;
+    max-width: 860px;
+    height: 480px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 40px;
+    transition: transform 0.3s;
+  }
+  
+  .main-video iframe:hover {
+    transform: scale(1.02);
+  }
+  
+  .video-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .thumb {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .thumb img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s;
+  }
+  
+  .thumb.active img,
+  .thumb:hover img {
+    border-color: #ffee5c;
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .video {
+      flex: 0 0 100%;
+    }
+  
+    .main-video iframe {
+      height: 280px;
+    }
+  }
+  
