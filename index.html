@@ -163,7 +163,7 @@
 
             <!-- Main Video with Fade-in Animation -->
             <div class="video-wrapper" data-animate="fade-up">
-                <iframe id="current-video" src="https://www.youtube.com/embed/wo7LwlwkkUA?si=wfdhutArPPBBUB8n" title="Current Video"
+                <iframe id="current-video" src="https://www.youtube.com/embed/wo7LwlwkkUA" title="Current Video"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -171,14 +171,14 @@
 
             <!-- Thumbnail Selector with Slide-in Animation -->
             <div class="thumbnails" data-animate="slide-up">
-                <button class="thumb active" data-src="https://www.youtube.com/embed/wo7LwlwkkUA?si=wfdhutArPPBBUB8n">
-                    <img src="https://www.youtube.com/embed/wo7LwlwkkUA?si=wfdhutArPPBBUB8n.jpg" alt="Video 1">
+                <button class="thumb active" data-src="https://www.youtube.com/embed/wo7LwlwkkUA">
+                    <img src="https://img.youtube.com/vi/wo7LwlwkkUA/0.jpg" alt="Video 1">
                 </button>
-                <button class="thumb" data-src="https://youtu.be/63EdR5Wj8PE?si=ZNEuhRTTe1CRQ-pS">
-                    <img src="https://youtu.be/63EdR5Wj8PE?si=ZNEuhRTTe1CRQ-pS.jpg" alt="Video 2">
+                <button class="thumb" data-src="https://www.youtube.com/embed/63EdR5Wj8PE">
+                    <img src="https://img.youtube.com/vi/63EdR5Wj8PE/0.jpg" alt="Video 2">
                 </button>
-                <button class="thumb" data-src="https://youtu.be/5BMcCN7KcvA?si=XzPJlodTqrjaFDEO">
-                    <img src="https://youtu.be/5BMcCN7KcvA?si=XzPJlodTqrjaFDEO.jpg" alt="Video 3">
+                <button class="thumb" data-src="https://www.youtube.com/embed/5BMcCN7KcvA">
+                    <img src="https://img.youtube.com/vi/5BMcCN7KcvA/0.jpg" alt="Video 3">
                 </button>
             </div>
         </div>
@@ -223,19 +223,19 @@
                 </div>
 
                 <div class="cliente">
-                    <img src="img/Breno.jpeg" alt="Cliente 2">
-                    <h3><a class="nome-cliente"
-                            href="https://www.instagram.com/tenentebreno?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Breno
-                            Freire</a></h3>
-                    <p>Atleta Classic Physique Olympian.</p>
-                </div>
-
-                <div class="cliente">
-                    <img src="img/Breno.jpeg" alt="Cliente 2">
+                    <img src="img/italaSurf.png" alt="Cliente 2">
                     <h3><a class="nome-cliente"
                             href="https://www.instagram.com/italoferreira?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Ítalo
                             Ferreira</a></h3>
                     <p>Campeão olímpico de surf brasileiro.</p>
+                </div>
+
+                <div class="cliente">
+                    <img src="img/karina.png" alt="Cliente 2">
+                    <h3><a class="nome-cliente"
+                            href="https://www.instagram.com/karinabacchi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Karina
+                            Bacchi</a></h3>
+                    <p>Empresária e especialista em publicidade</p>
                 </div>
 
                 <div class="cliente">
@@ -279,13 +279,20 @@
                         class="fab fa-whatsapp"></i></a>
             </div>
 
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form" action="https://formsubmit.co/pedrolima7p@gmail.com" method="POST">
                 <h3>Entre em contato</h3>
+
                 <input type="text" name="name" placeholder="Seu nome" required>
                 <input type="email" name="email" placeholder="Seu email" required>
                 <textarea name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+
+                <!-- Configurações adicionais -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://github.com/PedroLima71/obrigado/deployments/github-pages">
+
                 <button type="submit">Enviar</button>
             </form>
+
         </div>
     </footer>
 

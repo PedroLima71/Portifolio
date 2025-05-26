@@ -1,4 +1,3 @@
-// Initialize AOS Animations
 AOS.init({ duration: 800, once: true });
 
 // Video Switching Logic
