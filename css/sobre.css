@@ -75,7 +75,7 @@
 
     #sobre .container {
         flex-direction: column-reverse;
-        text-align: center;
+        text-align:start;
     }
 
     #sobre .content {
