@@ -2,7 +2,7 @@ function loadVideos() {
     const videoPaths = [
         'videos/video1.mp4',
         'videos/v8 (1) (1).mp4',
-        'videos/V618.mov',
+        'videos/V32.mov',
         'videos/video6.mp4',
         'videos/video9.mov',
         'videos/video3.mp4',
