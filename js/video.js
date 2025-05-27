@@ -2,12 +2,11 @@ function loadVideos() {
     const videoPaths = [
         'videos/video1.mp4',
         'videos/v8 (1) (1).mp4',
-        'videos/video5.MOV',
+        'videos/v618.mp4',
         'videos/video6.mp4',
+        'videos/v32.mp4',
+        'videos/video3.mp4',
         'videos/video7.mp4',
-        'videos/video6.mp4',
-        'videos/video7.mp4',
-        // Adicione mais vídeos conforme necessário
     ];
 
     const videoElements = document.querySelectorAll('.video video');
