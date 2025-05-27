@@ -4,7 +4,7 @@ function loadVideos() {
         'videos/v8 (1) (1).mp4',
         'videos/video5.MOV',
         'videos/video6.mp4',
-        'videos/video9.mp4',
+        'videos/video9.mov',
         'videos/video3.mp4',
         'videos/video7.mp4',
     ];
