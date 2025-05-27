@@ -1,9 +1,6 @@
 AOS.init({ duration: 800, once: true });
-
-// Video Switching Logic
 const thumbs = document.querySelectorAll('.thumb');
 const currentVideo = document.getElementById('current-video');
-
 thumbs.forEach(btn => {
   btn.addEventListener('click', () => {
     const newSrc = btn.getAttribute('data-src');
